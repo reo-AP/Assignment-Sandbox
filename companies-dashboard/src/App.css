@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  height:30vh;
+  justify-content: center;
+}
+
+
