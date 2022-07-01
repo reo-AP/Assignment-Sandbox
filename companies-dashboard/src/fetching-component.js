@@ -41,7 +41,7 @@ function Fetching() {
       c_id: data[0].id,
     };
     await axios.post(API_URL_POST_DATA, x);
-    nevigate("/list");
+    if (selected) nevigate("/list");
   };
 
   const extractCompanyData = (parent) => {

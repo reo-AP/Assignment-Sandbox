@@ -29,13 +29,13 @@ const Listing = () => {
   }, [list]);
 
   const [columnDefs2] = useState([
-    { field: "id", headerName: "ID", width: 50 },
-    { field: "company_name", headerName: "Company Name", width: 120 },
-    { field: "c_id", headerName: "Company CIN", width: 120 },
+    { field: "id", headerName: "ID", width: 120 },
+    { field: "company_name", headerName: "Company Name", width: 350 },
+    { field: "c_id", headerName: "Company CIN", width: 250 },
   ]);
 
   const table2 = (
-    <div style={{ height: 400, width: 300 }}>
+    <div style={{ height: 400, width: 700 }}>
       <DataGrid
         rows={list}
         columns={columnDefs2}
@@ -46,7 +46,7 @@ const Listing = () => {
   );
   return (
     <div
-      style={{ display: "flex", flexDirection: "column", marginTop: "20vh" }}
+      style={{ display: "flex", flexDirection: "column", marginTop: "25vh" }}
     >
       <h1>Listing Component</h1>
       {table2}
